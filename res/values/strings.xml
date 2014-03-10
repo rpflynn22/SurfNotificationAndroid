@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Surf Notification</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello worlds!</string>
+    <string name="FirstAndroid">First Android</string>
+    <string name="title_activity_get_spot">GetSpotActivity</string>
+    <string name="title_activity_get_area">GetAreaActivity</string>
+    <string name="title_activity_show_spots">ShowSpotsActivity</string>
+    <string name="title_activity_best_time">BestTimeActivity</string>
+    <string name="title_activity_remove_spot">RemoveSpotActivity</string>
+    <string name="title_activity_solid_surf">SolidSurfActivity</string>
+    <string name="title_activity_see_data">SeeDataActivity</string>
+    <string name="title_activity_notification_landing">NotificationLandingActivity</string>
+
+</resources>

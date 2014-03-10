@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="15dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GetAreaActivity" 
+    android:screenOrientation="portrait">
+
+    <ImageView
+        android:id="@+id/bestTimeActivityMswImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/msw_powered_by" />
+        
+    <TextView
+        android:id="@+id/bestTimeDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bestTimeActivityMswImg"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20sp"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/detailsDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bestTimeDisplay"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+
+
+
+</RelativeLayout>

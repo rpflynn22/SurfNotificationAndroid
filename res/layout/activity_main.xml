@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:screenOrientation="portrait">
+
+<TextView
+    android:id="@+id/tvDisplay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="43dp"
+    android:gravity="center"
+    android:text="Choose an option:"
+    android:textSize="25dp" />
+
+<Button
+    android:id="@+id/chooseNew"
+    android:layout_width="125dp"
+    android:layout_height="70dp"
+    android:layout_alignLeft="@+id/seeExisting"
+    android:layout_below="@+id/tvDisplay"
+    android:layout_marginTop="25dp"
+    android:text="Add\nSpots"
+    android:textSize="20dp" />
+
+<Button
+    android:id="@+id/removeSpot"
+    android:layout_width="125dp"
+    android:layout_height="70dp"
+    android:layout_alignBaseline="@+id/chooseNew"
+    android:layout_alignBottom="@+id/chooseNew"
+    android:layout_toRightOf="@+id/chooseNew"
+    android:text="Remove Spots"
+    android:textSize="20dp" />
+
+<Button
+    android:id="@+id/seeExisting"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/removeSpot"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="12dp"
+    android:text="Get Optimal Surf Time"
+    android:textSize="20dp" />
+
+<!-- Button
+    android:id="@+id/seeData"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/seeExisting"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="12dp"
+    android:text="See Data"
+    android:textSize="20dp" /-->
+
+
+
+
+
+
+</RelativeLayout>

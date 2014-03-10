@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:screenOrientation="portrait">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mavs_splash" />
+
+    <TextView
+        android:id="@+id/splashTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="SurfNotification"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000000" >
+        
+        <TextView
+            android:id="@+id/splashInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="developed by ryan flynn"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            android:typeface="monospace" />
+        
+        <ImageView
+	        android:id="@+id/mswLogo"
+	        android:layout_alignRight="@+id/splashInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/msw_powered_by" 
+	        android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

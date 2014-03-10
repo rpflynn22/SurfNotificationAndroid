@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.notify.surfnotification"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wave"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        <activity
+            android:name="com.notify.surfnotification.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.notify.surfnotification.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.notify.surfnotification.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.notify.surfnotification.GetRegionActivity"
+            android:label="@string/title_activity_get_spot"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.notify.surfnotification.GETREGIONACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.notify.surfnotification.GetAreaActivity"
+            android:label="@string/title_activity_get_area"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.notify.surfnotification.GETAREAACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.notify.surfnotification.GetSpotActivity"
+            android:label="@string/title_activity_get_spot"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.notify.surfnotification.GETSPOTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.notify.surfnotification.BestTimeActivity"
+            android:label="@string/title_activity_best_time"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.notify.surfnotification.BESTTIMEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.notify.surfnotification.RemoveSpotActivity"
+            android:label="@string/title_activity_remove_spot"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.notify.surfnotification.REMOVESPOTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.notify.surfnotification.MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <service
+            android:name="com.notify.surfnotification.MyAlarmService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.notify.surfnotification.SolidSurfActivity"
+            android:label="@string/title_activity_solid_surf" >
+        </activity>
+        <activity
+            android:name="com.notify.surfnotification.SeeDataActivity"
+            android:label="@string/title_activity_see_data" >
+            <intent-filter>
+                <action android:name="com.notify.surfnotification.SEEDATAACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.notify.surfnotification.NotificationLandingActivity"
+            android:label="@string/title_activity_notification_landing" >
+            <intent-filter>
+                <action android:name="com.notify.surfnotification.NOTIFICATIONLANDINGACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
